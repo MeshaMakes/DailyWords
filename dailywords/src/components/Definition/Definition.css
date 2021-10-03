@@ -1,0 +1,14 @@
+.definition {
+    background-color: #BEB70B30;
+    border-left: 0.5rem solid #BEB70B;
+    padding: 1rem;
+    color: #fff;
+    margin: 2rem 15rem;
+    transition: 0.5s;
+}
+
+@media (max-width: 868px) {
+    .definition {
+        margin: 2rem 0rem;
+    }
+}

@@ -1,0 +1,40 @@
+.spaces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4rem 15rem;
+    height: max-content;
+    width: auto;
+    transition: 0.5s;
+}
+
+.wordSpace {
+    height: 0.25rem;
+    width: 3.5rem;
+    margin: 0 1rem;
+    background-color: #fff;
+}
+
+@media (max-width: 1700px) {
+    .spaces {
+        margin: 4rem 20rem;
+    }
+
+    .wordSpace {
+        height: 0.3rem;
+        margin: 0 0.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .spaces {
+        width: 100%;
+        margin: 4rem 0rem;
+    }
+
+    .wordSpace {
+        height: 0.2rem;
+        margin: 0 0.5rem;
+    }
+}
