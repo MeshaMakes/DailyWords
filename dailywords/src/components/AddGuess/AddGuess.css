@@ -13,7 +13,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 3rem 30rem;
+    margin: 3rem 20rem;
     height: max-content;
     width: auto;
     transition: 0.5s;
@@ -48,13 +48,35 @@
     background-color: #BEB70B90;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 992px) {
+    /* laptops */
     .formWrap {
-        margin: 4rem 25rem;
+        margin: 4rem 15rem;
+        width: auto;
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+    /* tablets */
+    .formWrap {
+        width: auto;
+        margin: 4rem 2rem;
+        flex-direction: column;
+    }
+
+    .formWrap button {
+        width: 100%;
+        margin: 1rem 0rem;
+        padding: 0.7rem 0.2rem;
+    }
+
+    .formWrap input {
+        padding: 0.7rem 0.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* phones */
     .formWrap {
         width: 100%;
         margin: 4rem 0rem;

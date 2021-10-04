@@ -16,9 +16,10 @@
     background-color: #fff;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 992px) {
+    /* laptops */
     .spaces {
-        margin: 4rem 20rem;
+        margin: 4rem 10rem;
     }
 
     .wordSpace {
@@ -27,7 +28,21 @@
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
+    /* tablets */
+    .spaces {
+        width: auto;
+        margin: 4rem 2rem;
+    }
+
+    .wordSpace {
+        height: 0.2rem;
+        margin: 0 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* phones */
     .spaces {
         width: 100%;
         margin: 4rem 0rem;

@@ -7,7 +7,22 @@
     transition: 0.5s;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 992px) {
+    /* laptops */
+    .definition {
+        margin: 2rem 0rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* tablets */
+    .definition {
+        margin: 2rem 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* phone */
     .definition {
         margin: 2rem 0rem;
     }
