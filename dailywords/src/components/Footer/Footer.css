@@ -1,0 +1,32 @@
+.footerWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+    margin-top: 5rem;
+    width: 100%;
+    padding: 0rem 1rem;
+}
+
+.footerWrap button {
+    outline: none;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: #424242;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8rem 2rem;
+    cursor: pointer;
+}
+
+.footerWrap button:hover {
+    background-color: #42424290;
+}
+
+.footerWrap svg {
+    width: 1rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 1rem;
+}
