@@ -1,9 +1,19 @@
+.guessWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.guessWrap h4 {
+    margin: 0 auto;
+    color: #646464;
+}
+
 .formWrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 4rem 30rem;
+    margin: 3rem 30rem;
     height: max-content;
     width: auto;
     transition: 0.5s;

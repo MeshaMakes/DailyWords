@@ -4,11 +4,18 @@ import './AddGuess.css'
 const AddGuess = () => {
     const [guess, setGuess] = useState(3)
 
+    const guessesLeft = () => {
+        if(guess > 0) {
+            const guessNum = guess - 1
+            setGuess(guessNum)
+        }
+    }
+
     return (
         <div className="guessWrap">
-            <form className="formWrap">
+            <form className="formWrap" onSubmit={(e) => e.preventDefault()}>
                 <input type="text" placeholder="What's your guess?" name="guessBox"/>
-                <button type="submit" onClick={() => setGuess(guess - 1)}>Guess</button>
+                <button type="submit" onClick={() => guessesLeft()}>Guess</button>
             </form>
             <h4>{guess} Guesses Left</h4>
         </div>
