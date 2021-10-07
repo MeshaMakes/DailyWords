@@ -14,25 +14,63 @@
     color: #fff;
 }
 
+.navBar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1d1d1d;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.navHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navHeader h1 {
+    font-size: 1.5rem;
+    color: #BEB70B;
+    padding: 0rem 1rem;
+}
+
+.navHeader button {
+    padding: 2rem 1rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.navHeader button:hover {
+    color: #BEB70B;
+}
+
+.navHeader .closeBtn {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.navItem {
+    padding: 0.5rem 0rem;
+    font-size: 1.2rem;
+    color: #fff;
+    list-style: none;
+}
 
 .hamburger {
     display: block;
     cursor: pointer;
     padding: 0 1rem;
-}
-
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-    transform: translateY(-8px) rotate(-45deg);
 }
 
 .bar {
