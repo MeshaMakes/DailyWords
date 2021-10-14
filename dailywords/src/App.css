@@ -11,4 +11,27 @@ body {
   padding: 0rem;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.App {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+  height: 0.35rem;
+  width: 0.35rem;
+}
+::-webkit-scrollbar-track {
+  background: #424242;
+}
+::-webkit-scrollbar-thumb {
+  background: #666666;
+  border-radius: 50rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BEB70B70;
 }

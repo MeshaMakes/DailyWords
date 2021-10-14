@@ -8,10 +8,13 @@ import Footer from './components/Footer/Footer';
 const App = () => {
   return (
     <div className="App">
-      <Header />
-      <Definition def={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, deserunt sit? Impedit porro, illo odio dolore enim at, delectus eius qui consequatur tenetur sed obcaecati autem illum fuga deleniti veniam!"}/>
-      <WordGuess />
-      <AddGuess />
+      <div>
+        <Header />
+        <Definition def={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, deserunt sit? Impedit porro, illo odio dolore enim at, delectus eius qui consequatur tenetur sed obcaecati autem illum fuga deleniti veniam!"}/>
+        <WordGuess />
+        <AddGuess />
+      </div>
+      
       
       <Footer />
     </div>
