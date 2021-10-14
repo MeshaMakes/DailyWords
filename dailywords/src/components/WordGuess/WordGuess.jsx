@@ -1,18 +1,16 @@
 import './WordGuess.css'
 
+var word = "Tamesha"
+var wordLength = word.split('')
+
 const WordGuess = () => {
     return (
         <div className="spaces">
-            <div className="wordSpace"></div>
-            <div className="wordSpace"></div>
-            <div className="wordSpace"></div>
-            <div className="wordSpace"></div>
-            <div className="wordSpace"></div>
-            <div className="wordSpace"></div>
-            <div className="wordSpace"></div>
-            <div className="wordSpace"></div>
-            <div className="wordSpace"></div>
-            <div className="wordSpace"></div>
+            {
+                wordLength.map(function(val,) {
+                    return <div className="wordSpace"></div>
+                })
+            }
         </div>
     )
 }
