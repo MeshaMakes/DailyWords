@@ -1,25 +1,22 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import ApiContext from '../../Utils/apiService'
 import './WordGuess.css'
 
 const wordUrl = "https://random-word-api.herokuapp.com/word?number=1"
 
 const WordGuess = () => {
-    const [dailyWord, setDailyWord] = useState('')
+    const service = useContext(ApiContext)
 
     const getDailyWord = async () => {
-        const response = await fetch(wordUrl)
-        const dailyWord = await response.json()
-        setDailyWord(dailyWord)
+        const res = await service.generateWord()
     }
     
-    
-
     useEffect(() => {
         getDailyWord()
     }, [])
 
-    var wordLength = dailyWord.toString().split('')
-    console.log(dailyWord.toString());
+    var wordLength = service.dailyWord.toString().split('')
+    console.log(service.dailyWord.toString());
 
     return (
         <div className="spaces">

@@ -1,23 +1,20 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+import ApiContext from '../../Utils/apiService'
 import './Definition.css'
 
 const Definition = (props) => {
-    const [wordDef, setWordDef] = useState('')
-
+    const service = useContext(ApiContext)
     const getWordDef = async () => {
-        const response = await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/thus")
-        const result = await response.json()
-        const wordDef = await result[0]["meanings"][0]["definitions"][0]["definition"]
-        setWordDef(wordDef)
+        const res = await service.generateWordDefinition()
     }
 
     useEffect(() => {
         getWordDef()
-    }, [])
+    }, [service.dailyWord])
 
     return (
         <blockquote className='definition'>
-            {wordDef.toString()}
+            {service.wordDef.toString()}
         </blockquote>
     )
 }
